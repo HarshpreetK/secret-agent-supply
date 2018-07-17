@@ -17,7 +17,8 @@ html{
 .banner,
 nav,
 #products,
-footer span{
+#footer,
+#contact-info{
   width: 960px;
   margin: 0 auto;
 }
@@ -105,25 +106,39 @@ main{
 
 #products{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+
+
 }
 
 .product{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  border: 4px solid black;
-  width: 30%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+
+
 }
 
-.product img{
-  padding: 2rem;
-  height: 9rem;
+.product .image img{
+  width: 100%;
+
+}
+
+.product .image{
+  padding: 2rem 0;
+  width: 30%;
+  margin: auto;
+}
+
+
+.product-name{
+  text-align: center;
+}
+
+#contact-info{
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content:space-between;
   align-items: center;
 }
 
@@ -131,12 +146,36 @@ main{
   margin-top: 3rem;
   width: 35%;
   margin-bottom: 4rem;
+  width: 35%;
+}
+
+.info h3{
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: black;
+  color: white;
+}
+
+.info span{
+
 }
 
 footer{
+  color: white;
+  background-color: black;
 
 }
 
-footer span{
+#footer{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  height: 9rem;
+}
 
+#footer span{
+  margin-left: 0;
+  margin-top: auto;
+  margin-bottom: auto;
 }
