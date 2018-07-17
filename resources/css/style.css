@@ -84,8 +84,8 @@ header{
   padding-bottom: 0.75rem;
 }
 
-nav{
-
+#smaller-nav{
+  display: none;
 }
 
 nav ul{
@@ -164,7 +164,6 @@ main{
   margin-top: 3rem;
   width: 35%;
   margin-bottom: 4rem;
-  width: 35%;
 }
 
 .info h3{
@@ -196,4 +195,32 @@ footer{
   margin-left: 0;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+@media only screen and (max-width:1024px){
+  .banner-title h3{
+    font-size: 0.75rem;
+  }
+
+  .banner-title h2{
+    font-size: 1.75rem;
+    padding-top: 0.25rem;
+  }
+
+  #navigation nav{
+    display: none;
+  }
+
+  #smaller-nav{
+    display: block;
+    text-align: center;
+  }
+
+  #products .product{
+    width: 47%;
+  }
+
+  #third-product{
+    display:none;
+  }
 }
