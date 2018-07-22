@@ -216,11 +216,105 @@ footer{
     text-align: center;
   }
 
+  #products{
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-between;
+    width:100%;
+  }
+
   #products .product{
     width: 47%;
   }
 
   #third-product{
     display:none;
+  }
+
+  #site-container{
+    width: 100%;
+  }
+
+  #contact-info{
+    width: 100%;
+}
+
+@media only screen and (max-width:470px){
+
+  .banner-title h3{
+    font-size: 0.77rem;
+  }
+
+  .banner-title h2{
+    font-size: 1rem;
+    padding-top: 0.25rem;
+  }
+
+  #navigation nav{
+    display: none;
+  }
+
+  #smaller-nav{
+    display: block;
+    text-align: center;
+  }
+
+  #full-banner{
+    height: 15rem;
+  }
+
+  .banner-title{
+   margin-top: 10rem;
+   padding: 1rem 2rem;
+   width: 100%;
+  }
+
+  #second-product{
+    display: none;
+  }
+
+  #products .product{
+    width: 90%;
+  }
+
+  #contact-info{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact-info .info{
+    width: 90%;
+  }
+
+  #site-container{
+    overflow:hidden;
+  }
+
+  #products .product{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #location{
+    padding-bottom: 0.5rem;
+    margin-top:3rem;
+    margin-bottom: 0;
+  }
+
+  #hours{
+    margin-top:0.5rem;
+    padding-bottom:0.5rem;
+  }
+
+  #footer{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    height: 9rem;
+    width:100%;
+  }
+
+  #footer span{
+    margin: 0 auto;
   }
 }
